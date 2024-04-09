@@ -1,0 +1,75 @@
+@import "../../vars.css";
+
+/*home*/
+.home {
+  padding: 80px 0 50px 0;
+  color: var(--color-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*content intro*/
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greet {
+  display: flex;
+  align-items: center;
+}
+
+.greet div {
+  width: 30px;
+  background-color: var(--color-dark);
+  height: 1px;
+}
+
+.intro .greet p {
+  font-size: 20px;
+}
+
+.name {
+  font-size: 64px;
+  display: inline;
+  font-weight: bold;
+}
+.myname {
+  color: var(--color-primary);
+}
+
+.greet p {
+  padding: 4px;
+}
+
+.intro p {
+  padding: 4px;
+}
+
+button {
+  background-color: transparent;
+  color: var(--color-primary);
+  font-size: 20px;
+  padding: 10px 30px;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  color: whitesmoke;
+  background-color: var(--color-primary);
+}
+
+/* socials*/
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px;
+}

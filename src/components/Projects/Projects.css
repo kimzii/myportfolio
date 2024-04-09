@@ -1,0 +1,152 @@
+@import "../../vars.css";
+
+/*projects*/
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px 0 70px 0;
+}
+#projects h2 {
+  color: var(--color-primary);
+  margin-bottom: 100px;
+}
+
+.project-image {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.visit {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  width: 169px;
+  height: 36px;
+}
+
+.visit a {
+  text-decoration: none;
+  color: white;
+}
+
+.details {
+  width: 350px;
+  text-align: justify;
+}
+
+/*RockPaperScissor*/
+
+#RockPaperScissor .project-image {
+  background-image: url(../../Resources/projects/RockPaperScissor.svg);
+}
+
+/*Riffrant*/
+
+#Riffrant .project-image {
+  background-image: url(../../Resources/projects/riffrant.svg);
+}
+
+/*Proverbs Web App*/
+
+#ProverbsWebApp .project-image {
+  background-image: url(../../Resources/projects/Proverbs.svg);
+}
+
+#RockPaperScissor,
+#ProverbsWebApp,
+#Riffrant {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*projects-details div design*/
+
+#RockPaperScissor .project-details .vl .line {
+  height: 270px;
+}
+
+#Riffrant .project-details .vl .line {
+  height: 330px;
+}
+
+#ProverbsWebApp .project-details .vl .line {
+  height: 270px;
+}
+
+.project-details .vl .line {
+  width: 2px;
+  background-color: var(--color-primary);
+}
+
+.project-details .vl {
+  color: var(--color-primary);
+}
+
+.project-details .vl span {
+  font-weight: bold;
+}
+
+.project-details {
+  display: flex;
+  align-items: center;
+}
+
+.vl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* tech used*/
+
+.tech-used span {
+  background-color: #f5f5dc;
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.tech-used {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*visit repo*/
+.visit-repo {
+  color: white;
+  background-color: var(--color-primary);
+  padding: 5px 40px 5px 40px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.visit-repo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* projects-ctn flex*/
+
+#project-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}

@@ -1,0 +1,50 @@
+@import "../../vars.css";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0 70px 0;
+  gap: 40px;
+}
+
+.about h2 {
+  color: var(--color-primary);
+  margin-bottom: 80px;
+}
+
+/*introduuction*/
+.aboutIntroduction {
+  line-height: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.aboutIntroduction img {
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+  border: 15px solid var(--color-primary);
+}
+
+.aboutIntroduction div {
+  width: 450px;
+}
+
+.aboutIntroduction div p {
+  text-align: justify;
+}
+
+/*tect stack*/
+.techCtn {
+  width: 400px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
