@@ -12,16 +12,7 @@ export const Navbar = () => {
 
   const [contactOpen, setContactOpen] = useState(false);
 
-  const btnContainer = document.querySelector("div");
-  const btns = btnContainer.querySelector("a");
 
-  for(let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', function(){
-      let current = document.querySelector("active");
-      current[0].className = current[0].className.replace(" active");
-      this.className += " active";
-    })
-  }
 
   return (
     <section>
@@ -31,7 +22,7 @@ export const Navbar = () => {
         </div>
 
         <div>
-          <a className={`${styles.btn} ${styles.active}`} href="#home">
+          <a className={styles.active} href="#home">
             <Home width="16px"></Home>
             <span>HOME</span>
           </a>
