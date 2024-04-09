@@ -12,7 +12,16 @@ export const Navbar = () => {
 
   const [contactOpen, setContactOpen] = useState(false);
 
+  const btnContainer = document.querySelector("div");
+  const btns = btnContainer.querySelector("a");
 
+  for(let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function(){
+      let current = document.querySelector("active");
+      current[0].className = current[0].className.replace(" active");
+      this.className += " active";
+    })
+  }
 
   return (
     <section>
@@ -22,28 +31,28 @@ export const Navbar = () => {
         </div>
 
         <div>
-          <a href="#home">
-            <Home></Home>
+          <a className={`${styles.btn} ${styles.active}`} href="#home">
+            <Home width="16px"></Home>
             <span>HOME</span>
           </a>
 
-          <a href="#about">
-            <Info></Info>
+          <a className={styles.btn} href="#about">
+            <Info width="16px"></Info>
             <span>ABOUT</span>
           </a>
 
-          <a href="#experience">
-            <Wrench></Wrench>
+          <a className={styles.btn} href="#experience">
+            <Wrench width="16px"></Wrench>
             <span>EXPERIENCE</span>
           </a>
 
-          <a href="#projects">
-            <Folder></Folder>
+          <a className={styles.btn} href="#projects">
+            <Folder width="16px"></Folder>
             <span>PROJECTS</span>
           </a>
 
-          <a className={styles.contactbtn} onClick={() => setContactOpen(!contactOpen)} href="#contact-ctn">
-            <Phone></Phone>
+          <a className={`${styles.contactbtn}`} onClick={() => setContactOpen(!contactOpen)} href="#contact-ctn">
+            <Phone width="16px"></Phone>
             <span>CONTACT</span>
           </a>
         </div>
