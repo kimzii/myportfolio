@@ -1,9 +1,10 @@
 import icon from "../../Resources/icon/KT.svg"
 import styles from "./Navbar.module.css"
-import home from "../../Resources/nav/home.svg"
-import about from "../../Resources/nav/about.svg"
-import projects from "../../Resources/nav/project.svg"
-import contact from "../../Resources/nav/call.png"
+import { Home } from 'lucide-react';
+import { Info } from 'lucide-react';
+import { Wrench } from 'lucide-react';
+import { Folder } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { useState } from "react"
 
 
@@ -22,27 +23,27 @@ export const Navbar = () => {
 
         <div>
           <a href="#home">
-            <img src={home} alt="" />
+            <Home></Home>
             <span>HOME</span>
           </a>
 
           <a href="#about">
-            <img src={about} alt="" />
+            <Info></Info>
             <span>ABOUT</span>
           </a>
 
           <a href="#experience">
-            <img src={projects} alt="" />
+            <Wrench></Wrench>
             <span>EXPERIENCE</span>
           </a>
 
           <a href="#projects">
-            <img src={projects} alt="" />
+            <Folder></Folder>
             <span>PROJECTS</span>
           </a>
 
           <a className={styles.contactbtn} onClick={() => setContactOpen(!contactOpen)} href="#contact-ctn">
-            <img src={contact} alt="" width="24px" />
+            <Phone></Phone>
             <span>CONTACT</span>
           </a>
         </div>
