@@ -18,7 +18,7 @@ export const Navbar = () => {
     <section>
       <nav>
         <div>
-          <img src={icon} alt="icon" width="38px"/>
+          <img src={icon} alt="icon" width="40px"/>
         </div>
 
         <div>

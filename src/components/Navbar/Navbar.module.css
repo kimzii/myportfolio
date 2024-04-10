@@ -9,6 +9,7 @@ nav {
   backdrop-filter: blur(5px);
   width: 100%;
   max-width: 1600px;
+  padding: 8px;
   z-index: 3;
 }
 
@@ -19,8 +20,8 @@ nav a {
 
 nav div {
   display: flex;
-  gap: 20px;
-  padding: 10px 10px 10px 10px;
+  gap: 30px;
+  padding: 0px 10px 0px 10px;
 }
 
 nav div a {
