@@ -39,12 +39,15 @@
 
 /*tect stack*/
 .techCtn {
-  width: 400px;
-  height: 150px;
+  max-width: 600px;
   display: flex;
   flex-direction: row;
   gap: 50px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.techCtn img{
+  width: 48px;
 }
